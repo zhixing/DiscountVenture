@@ -10,6 +10,7 @@
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 #import "Discount.h"
 #import "DiscountTableViewCell.h"
+#import "DiscountDetailViewController.h"
 
 enum discountListType{
     TYPE_DEFAULT,

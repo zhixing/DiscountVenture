@@ -112,15 +112,15 @@
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="DiscountCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscountCell" rowHeight="102" id="RdM-un-LcD" customClass="DiscountTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="DiscountCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DiscountCell" rowHeight="102" id="RdM-un-LcD" customClass="DiscountTableViewCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="102"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RdM-un-LcD" id="bJD-Ud-ypL">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="102"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rkC-YW-SFT">
-                                                    <rect key="frame" x="6" y="11" width="80" height="81"/>
+                                                    <rect key="frame" x="6" y="11" width="79" height="80"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discount Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewK-fE-pgC">
@@ -152,6 +152,7 @@
                                             <outlet property="iconImageView" destination="rkC-YW-SFT" id="tvC-nZ-BUM"/>
                                             <outlet property="titleLabel" destination="ewK-fE-pgC" id="nu7-ab-LdT"/>
                                             <outlet property="validPeriodLabel" destination="plR-th-4W0" id="utr-xQ-ZJo"/>
+                                            <segue destination="r7x-eR-FzH" kind="push" id="IRe-0L-Uze"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -178,6 +179,54 @@
             </objects>
             <point key="canvasLocation" x="692" y="877"/>
         </scene>
+        <!--Discount Detail View Controller-->
+        <scene sceneID="SYd-2d-Laz">
+            <objects>
+                <viewController id="r7x-eR-FzH" customClass="DiscountDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fav-Gq-jEw"/>
+                        <viewControllerLayoutGuide type="bottom" id="JNf-sK-Ynp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8am-0W-bwi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blurBackground" translatesAutoresizingMaskIntoConstraints="NO" id="K5a-hh-hNh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wMq-F6-ipX">
+                                <rect key="frame" x="25" y="92" width="95" height="96"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJU-95-NfC">
+                                <rect key="frame" x="136" y="99" width="164" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descriptions" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="275" translatesAutoresizingMaskIntoConstraints="NO" id="q6Y-fC-eed">
+                                <rect key="frame" x="25" y="220" width="275" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNq-Fj-p1x">
+                                <rect key="frame" x="136" y="155" width="164" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ts9-Fz-9aZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5of-9J-9HE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="877"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="TKT-ZO-u5j">
             <objects>
@@ -199,6 +248,7 @@
     </scenes>
     <resources>
         <image name="appBackground" width="1280" height="720"/>
+        <image name="blurBackground" width="2448" height="2448"/>
         <image name="menuBackground" width="744" height="1392"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

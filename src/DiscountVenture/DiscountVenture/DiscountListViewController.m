@@ -120,20 +120,23 @@
  }
  */
 
-/*
+
  #pragma mark - Navigation
  
  // In a story board-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
  {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
+     DiscountDetailViewController *destinationVC = (DiscountDetailViewController*)[segue destinationViewController];
+     NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+     
+     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+     
+     destinationVC.discount = [self.discounts objectAtIndex:path.row];
  }
  
- */
+
 
 - (IBAction)menuButtonPressed:(id)sender {
     [self.slidingViewController anchorTopViewToRightAnimated:YES];
-
 }
 @end

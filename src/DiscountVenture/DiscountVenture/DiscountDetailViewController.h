@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Discount.h"
 
 @interface DiscountDetailViewController : UIViewController
+
+@property (strong, nonatomic) Discount* discount;
 
 @end
