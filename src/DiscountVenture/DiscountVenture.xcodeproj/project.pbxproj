@@ -26,6 +26,7 @@
 		49E73A0C1932EE110079E8D3 /* CardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E73A0B1932EE110079E8D3 /* CardTableViewController.m */; };
 		49E73A0F1932EE270079E8D3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E73A0E1932EE270079E8D3 /* SettingsViewController.m */; };
 		49E73A121932EED60079E8D3 /* DiscountDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E73A111932EED60079E8D3 /* DiscountDetailViewController.m */; };
+		49E73A151932F55C0079E8D3 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E73A141932F55C0079E8D3 /* MenuTableViewCell.m */; };
 		E62798F257B241E28F23788C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D996E9377B54DC7ADE7D9FB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		49E73A0E1932EE270079E8D3 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		49E73A101932EED60079E8D3 /* DiscountDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscountDetailViewController.h; sourceTree = "<group>"; };
 		49E73A111932EED60079E8D3 /* DiscountDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscountDetailViewController.m; sourceTree = "<group>"; };
+		49E73A131932F55C0079E8D3 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		49E73A141932F55C0079E8D3 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
 		B53DD56EB84C48DAA4F3F178 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +197,8 @@
 		49E73A051932EDA30079E8D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49E73A131932F55C0079E8D3 /* MenuTableViewCell.h */,
+				49E73A141932F55C0079E8D3 /* MenuTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 				49E73A0F1932EE270079E8D3 /* SettingsViewController.m in Sources */,
 				4946F086192B50E300F955C2 /* main.m in Sources */,
 				49E73A121932EED60079E8D3 /* DiscountDetailViewController.m in Sources */,
+				49E73A151932F55C0079E8D3 /* MenuTableViewCell.m in Sources */,
 				49E73A091932EDE50079E8D3 /* DiscountListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

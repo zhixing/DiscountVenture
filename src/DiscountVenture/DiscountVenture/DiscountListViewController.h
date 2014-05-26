@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 
 @interface DiscountListViewController : UIViewController
+- (IBAction)menuButtonPressed:(id)sender;
 
 @end

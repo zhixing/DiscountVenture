@@ -46,4 +46,8 @@
 }
 */
 
+- (IBAction)menuButtonPressed:(id)sender {
+    [self.slidingViewController anchorTopViewToRightAnimated:YES];
+
+}
 @end
