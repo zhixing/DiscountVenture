@@ -26,7 +26,7 @@
     self.tableView.dataSource = self;
     
     iconImages = [NSArray arrayWithObjects:@"nearby", @"category", @"cards", @"favourites", @"search", @"account", nil];
-    titles = [NSArray arrayWithObjects:@"Nearby", @"Category", @"Cards", @"My Favourites", @"Advanced Search", @"Account", nil];
+    titles = [NSArray arrayWithObjects:@"Nearby", @"Service Category", @"Cards", @"My Favourites", @"Advanced Search", @"Account", nil];
     
     // Select the first row, because the default vc to load is the major mc.
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
@@ -63,6 +63,36 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *title = titles[indexPath.row];
     
+    if ([title isEqualToString:@"Nearby"]){
+        
+        
+        
+    } else if ([title isEqualToString:@"Service Category"]){
+        
+        
+        
+    } else if ([title isEqualToString:@"Cards"]){
+        
+        
+        
+    } else if ([title isEqualToString:@"My Favourites"]){
+        
+        
+        
+    } else if ([title isEqualToString:@"Advanced Search"]){
+        
+        
+        
+    } else if ([title isEqualToString:@"Account"]){
+        
+        
+        
+    } else{
+        
+        NSLog(@"Invalid item pressed at the menu list");
+        
+    }
+    
 //    if ([title isEqualToString:@"万门课程"] || [title isEqualToString:@"我的课程"]) {
 //        
 //        UINavigationController *vc = (UINavigationController*)[self.storyboard instantiateViewControllerWithIdentifier:@"NVBeforeMajorTableVC"];
@@ -76,11 +106,6 @@
 //        }
 //        [self.slidingViewController setTopViewController:vc];
 //        [self.slidingViewController resetTopViewAnimated:YES];
-//        
-//    } else if ([title isEqualToString:@"系统设置"]) {
-//        
-//        NSLog(@"系统设置 pressed");
-//        // TODO NOT implemented yet
 //        
 //    }
 }

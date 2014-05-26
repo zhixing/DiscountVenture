@@ -8,8 +8,24 @@
 
 #import <UIKit/UIKit.h>
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
+#import "Discount.h"
+#import "DiscountTableViewCell.h"
+
+enum discountListType{
+    TYPE_DEFAULT,
+    TYPE_NEARBY,
+    TYPE_CATEGORY,
+    TYPE_FAVOURITES,
+    TYPE_ADVANCED_SEARCH
+};
 
 @interface DiscountListViewController : UIViewController
+
+@property (nonatomic) enum discountListType disCountType;
+@property (strong, nonatomic) NSArray* discounts;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+
 - (IBAction)menuButtonPressed:(id)sender;
 
 @end

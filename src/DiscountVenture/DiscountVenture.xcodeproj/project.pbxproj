@@ -21,6 +21,8 @@
 		4946F09E192B50E300F955C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4946F07D192B50E300F955C2 /* UIKit.framework */; };
 		4946F0A6192B50E300F955C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4946F0A4192B50E300F955C2 /* InfoPlist.strings */; };
 		4946F0A8192B50E300F955C2 /* DiscountVentureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946F0A7192B50E300F955C2 /* DiscountVentureTests.m */; };
+		49A6FBEA19332D9F00B06E42 /* DiscountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FBE919332D9F00B06E42 /* DiscountTableViewCell.m */; };
+		49A6FBED1933325A00B06E42 /* Discount.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FBEC1933325A00B06E42 /* Discount.m */; };
 		49E73A011932ED800079E8D3 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E73A001932ED800079E8D3 /* MenuTableViewController.m */; };
 		49E73A091932EDE50079E8D3 /* DiscountListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E73A081932EDE50079E8D3 /* DiscountListViewController.m */; };
 		49E73A0C1932EE110079E8D3 /* CardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E73A0B1932EE110079E8D3 /* CardTableViewController.m */; };
@@ -60,6 +62,10 @@
 		4946F0A3192B50E300F955C2 /* DiscountVentureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiscountVentureTests-Info.plist"; sourceTree = "<group>"; };
 		4946F0A5192B50E300F955C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4946F0A7192B50E300F955C2 /* DiscountVentureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscountVentureTests.m; sourceTree = "<group>"; };
+		49A6FBE819332D9F00B06E42 /* DiscountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscountTableViewCell.h; sourceTree = "<group>"; };
+		49A6FBE919332D9F00B06E42 /* DiscountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscountTableViewCell.m; sourceTree = "<group>"; };
+		49A6FBEB1933325A00B06E42 /* Discount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Discount.h; sourceTree = "<group>"; };
+		49A6FBEC1933325A00B06E42 /* Discount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Discount.m; sourceTree = "<group>"; };
 		49E739FF1932ED800079E8D3 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		49E73A001932ED800079E8D3 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		49E73A071932EDE50079E8D3 /* DiscountListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscountListViewController.h; sourceTree = "<group>"; };
@@ -199,6 +205,8 @@
 			children = (
 				49E73A131932F55C0079E8D3 /* MenuTableViewCell.h */,
 				49E73A141932F55C0079E8D3 /* MenuTableViewCell.m */,
+				49A6FBE819332D9F00B06E42 /* DiscountTableViewCell.h */,
+				49A6FBE919332D9F00B06E42 /* DiscountTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -206,6 +214,8 @@
 		49E73A061932EDAB0079E8D3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				49A6FBEB1933325A00B06E42 /* Discount.h */,
+				49A6FBEC1933325A00B06E42 /* Discount.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -349,8 +359,10 @@
 				49E73A0F1932EE270079E8D3 /* SettingsViewController.m in Sources */,
 				4946F086192B50E300F955C2 /* main.m in Sources */,
 				49E73A121932EED60079E8D3 /* DiscountDetailViewController.m in Sources */,
+				49A6FBED1933325A00B06E42 /* Discount.m in Sources */,
 				49E73A151932F55C0079E8D3 /* MenuTableViewCell.m in Sources */,
 				49E73A091932EDE50079E8D3 /* DiscountListViewController.m in Sources */,
+				49A6FBEA19332D9F00B06E42 /* DiscountTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

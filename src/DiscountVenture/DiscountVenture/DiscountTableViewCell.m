@@ -1,14 +1,14 @@
 //
-//  MenuTableViewCell.m
+//  DiscountTableViewCell.m
 //  DiscountVenture
 //
 //  Created by Zhixing Yang on 26/5/14.
 //  Copyright (c) 2014 DiscountVenture. All rights reserved.
 //
 
-#import "MenuTableViewCell.h"
+#import "DiscountTableViewCell.h"
 
-@implementation MenuTableViewCell
+@implementation DiscountTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -27,9 +27,8 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-    
-    UIView *backgroundView = [[UIView alloc] initWithFrame:self.selectedBackgroundView.frame];
-    [backgroundView setBackgroundColor:[UIColor colorWithRed:0.f green:0.f blue:0.f alpha:0.5]];
-    [self setSelectedBackgroundView:backgroundView];}
+
+    // Configure the view for the selected state
+}
 
 @end
