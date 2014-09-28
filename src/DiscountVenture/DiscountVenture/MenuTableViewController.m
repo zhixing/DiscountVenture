@@ -63,19 +63,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *title = titles[indexPath.row];
     
-    if ([title isEqualToString:@"Nearby"]){
+    if ([title isEqualToString:@"Nearby"] || [title isEqualToString:@"My Favourites"]){
         
-        
+        UINavigationController *vc = (UINavigationController*)[self.storyboard instantiateViewControllerWithIdentifier:@"NaviVCBrforeDiscountVC"];
+        [self.slidingViewController setTopViewController:vc];
+        [self.slidingViewController resetTopViewAnimated:YES];
         
     } else if ([title isEqualToString:@"Service Category"]){
         
         
         
     } else if ([title isEqualToString:@"Cards"]){
-        
-        
-        
-    } else if ([title isEqualToString:@"My Favourites"]){
         
         
         

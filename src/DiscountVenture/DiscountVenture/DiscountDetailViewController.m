@@ -27,6 +27,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.titleLabel.text = self.discount.title;
+    self.descriptionsLabel.text = self.discount.description;
+    self.validPeriodLabel.text = self.discount.validPeriod;
+    
+    UIImage* image = [UIImage imageNamed:self.discount.iconURL];
+    self.iconImageView.image = image;
 }
 
 - (void)didReceiveMemoryWarning

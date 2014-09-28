@@ -186,6 +186,8 @@
 		49E73A031932ED8E0079E8D3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				49E739FF1932ED800079E8D3 /* MenuTableViewController.h */,
+				49E73A001932ED800079E8D3 /* MenuTableViewController.m */,
 				49E73A071932EDE50079E8D3 /* DiscountListViewController.h */,
 				49E73A081932EDE50079E8D3 /* DiscountListViewController.m */,
 				49E73A0A1932EE110079E8D3 /* CardTableViewController.h */,
@@ -194,8 +196,6 @@
 				49E73A0E1932EE270079E8D3 /* SettingsViewController.m */,
 				49E73A101932EED60079E8D3 /* DiscountDetailViewController.h */,
 				49E73A111932EED60079E8D3 /* DiscountDetailViewController.m */,
-				49E739FF1932ED800079E8D3 /* MenuTableViewController.h */,
-				49E73A001932ED800079E8D3 /* MenuTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";

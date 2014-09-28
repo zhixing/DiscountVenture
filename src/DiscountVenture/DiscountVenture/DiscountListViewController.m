@@ -41,6 +41,9 @@
                                       andValidPeriod:@"Valid till December 2"];
     
     self.discounts = [NSArray arrayWithObjects:d1, d2, d3, nil];
+    
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning

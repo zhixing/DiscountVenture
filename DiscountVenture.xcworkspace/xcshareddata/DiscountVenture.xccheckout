@@ -10,29 +10,29 @@
 	<string>DiscountVenture</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6A438D6A-6481-4175-B4D3-ADD4C8236869</key>
+		<key>D50362FCABC68F74DCAA8667340D14F059ACEDC8</key>
 		<string>https://github.com/zhixing/DiscountVenture.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DiscountVenture.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6A438D6A-6481-4175-B4D3-ADD4C8236869</key>
+		<key>D50362FCABC68F74DCAA8667340D14F059ACEDC8</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zhixing/DiscountVenture.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6A438D6A-6481-4175-B4D3-ADD4C8236869</string>
+	<string>D50362FCABC68F74DCAA8667340D14F059ACEDC8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6A438D6A-6481-4175-B4D3-ADD4C8236869</string>
+			<string>D50362FCABC68F74DCAA8667340D14F059ACEDC8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DiscountVenture</string>
 		</dict>

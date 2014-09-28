@@ -13,4 +13,13 @@
 
 @property (strong, nonatomic) Discount* discount;
 
+@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *validPeriodLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *descriptionsLabel;
+
+
 @end

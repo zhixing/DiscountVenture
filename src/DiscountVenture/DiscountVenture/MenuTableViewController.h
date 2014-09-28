@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MenuTableViewCell.h"
+#import "DiscountListViewController.h"
 
 @interface MenuTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
