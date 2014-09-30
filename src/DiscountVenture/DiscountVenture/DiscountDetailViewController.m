@@ -29,11 +29,12 @@
     // Do any additional setup after loading the view.
     
     self.titleLabel.text = self.discount.title;
-    self.descriptionsLabel.text = self.discount.description;
-    self.validPeriodLabel.text = [NSString stringWithFormat:@"%d" ,self.discount.validTo];
+    self.descriptionsLabel.text = self.discount.discountDescription;
+    self.validPeriodLabel.text = @"Valid till 12 Dec 2014";
     
-    UIImage* image = [UIImage imageNamed:self.discount.iconURL];
-    self.iconImageView.image = image;
+    [self.iconImageView setImageWithURL:[NSURL URLWithString:self.discount.iconURL]
+                       placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    
 }
 
 - (void)didReceiveMemoryWarning

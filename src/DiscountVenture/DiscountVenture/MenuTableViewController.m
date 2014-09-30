@@ -83,9 +83,12 @@
         
         
         
+        
     } else if ([title isEqualToString:CARDS]){
         
-        
+        UINavigationController *vc = (UINavigationController*)[self.storyboard instantiateViewControllerWithIdentifier:@"NavBeforeCardTableViewController"];
+        [self.slidingViewController setTopViewController:vc];
+        [self.slidingViewController resetTopViewAnimated:YES];
         
     } else{
         

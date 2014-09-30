@@ -27,34 +27,42 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
-    Discount* d1 = [[Discount alloc] initWithIconURL:@"cocacola"
-                                            andTitle:@"Coca Cola"
-                                      andDescription:@"With every purchase of $100, $15 is refunded"
-                                        andValidFrom:20140412
-                                          andValidTo:20140412];
-    Discount* d2 = [[Discount alloc] initWithIconURL:@"ikea"
-                                            andTitle:@"Ikea Family Care"
-                                      andDescription:@"Enjoy 10% discount at our new retail store at Vivo City"
-                                        andValidFrom:20140412
-                                          andValidTo:20140412];
-    Discount* d3 = [[Discount alloc] initWithIconURL:@"sumsung"
-                                            andTitle:@"Sumsung"
-                                      andDescription:@"All items sell at 15% discount"
-                                        andValidFrom:20140412
-                                          andValidTo:20140412];
-    
-    self.discounts = [NSArray arrayWithObjects:d1, d2, d3, nil];
-    
-    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
-
+    [self loadDateFromServer];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Load Data
+
+- (void) loadDateFromServer{
+    
+    self.discounts = [[NSMutableArray alloc] init];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Discount"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            NSLog(@"Successfully retrieved %d discounts.", objects.count);
+
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object);
+                Discount* discount = [[Discount alloc] initWithIconURL:object[@"iconURL"]
+                                                              andTitle:object[@"title"]
+                                                        andDescription:object[@"discountDescription"]
+                                                          andValidFrom: (int)object[@"validFrom"]
+                                                            andValidTo: (int)object[@"validFrom"]];
+                [self.discounts addObject: discount];
+            }
+            
+            [self.tableView reloadData];
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
 }
 
 #pragma mark - Table view data source
@@ -72,11 +80,11 @@
     Discount* discount = [self.discounts objectAtIndex:indexPath.row];
     
     cell.titleLabel.text = discount.title;
-    cell.descriptionsLabel.text = discount.description;
-    cell.validPeriodLabel.text = @"ffff";
+    cell.descriptionsLabel.text = discount.discountDescription;
+    cell.validPeriodLabel.text = @"Valid till 12 Dec 2014";
     
-    UIImage* image = [UIImage imageNamed:discount.iconURL];
-    cell.iconImageView.image = image;
+    [cell.iconImageView setImageWithURL:[NSURL URLWithString:discount.iconURL]
+                       placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
     
     return cell;
 }
@@ -141,8 +149,6 @@
      
      destinationVC.discount = [self.discounts objectAtIndex:path.row];
  }
- 
-
 
 - (IBAction)menuButtonPressed:(id)sender {
     [self.slidingViewController anchorTopViewToRightAnimated:YES];

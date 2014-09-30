@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import "Card.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface CardTableViewController : UITableViewController
+
+@property (strong, nonatomic) NSMutableArray* cards;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *backButtonPressed;
 
 @end

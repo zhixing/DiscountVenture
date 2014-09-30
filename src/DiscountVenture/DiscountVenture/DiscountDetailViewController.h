@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Discount.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface DiscountDetailViewController : UIViewController
 

@@ -12,6 +12,7 @@
 #import "DiscountTableViewCell.h"
 #import "DiscountDetailViewController.h"
 #import <Parse/Parse.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 enum discountListType{
     TYPE_DEFAULT,
@@ -24,7 +25,7 @@ enum discountListType{
 @interface DiscountListViewController : UIViewController
 
 @property (nonatomic) enum discountListType disCountType;
-@property (strong, nonatomic) NSArray* discounts;
+@property (strong, nonatomic) NSMutableArray* discounts;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 

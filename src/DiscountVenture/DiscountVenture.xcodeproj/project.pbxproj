@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492D1B2119DAADD8006BEB04 /* map_.png in Resources */ = {isa = PBXBuildFile; fileRef = 492D1B2019DAADD8006BEB04 /* map_.png */; };
+		492D1B2419DAAF03006BEB04 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 492D1B2319DAAF03006BEB04 /* Card.m */; };
 		4946F07A192B50E300F955C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4946F079192B50E300F955C2 /* Foundation.framework */; };
 		4946F07C192B50E300F955C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4946F07B192B50E300F955C2 /* CoreGraphics.framework */; };
 		4946F07E192B50E300F955C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4946F07D192B50E300F955C2 /* UIKit.framework */; };
@@ -57,6 +59,9 @@
 
 /* Begin PBXFileReference section */
 		2D996E9377B54DC7ADE7D9FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		492D1B2019DAADD8006BEB04 /* map_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_.png; sourceTree = "<group>"; };
+		492D1B2219DAAF03006BEB04 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		492D1B2319DAAF03006BEB04 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		4946F076192B50E300F955C2 /* DiscountVenture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscountVenture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4946F079192B50E300F955C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4946F07B192B50E300F955C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -274,8 +279,11 @@
 		49E73A061932EDAB0079E8D3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				492D1B2019DAADD8006BEB04 /* map_.png */,
 				49A6FBEB1933325A00B06E42 /* Discount.h */,
 				49A6FBEC1933325A00B06E42 /* Discount.m */,
+				492D1B2219DAAF03006BEB04 /* Card.h */,
+				492D1B2319DAAF03006BEB04 /* Card.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -367,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4946F090192B50E300F955C2 /* Main_iPad.storyboard in Resources */,
+				492D1B2119DAADD8006BEB04 /* map_.png in Resources */,
 				4946F095192B50E300F955C2 /* Images.xcassets in Resources */,
 				4946F08D192B50E300F955C2 /* Main_iPhone.storyboard in Resources */,
 				4946F084192B50E300F955C2 /* InfoPlist.strings in Resources */,
@@ -430,6 +439,7 @@
 				49A6FBED1933325A00B06E42 /* Discount.m in Sources */,
 				49E73A151932F55C0079E8D3 /* MenuTableViewCell.m in Sources */,
 				49E73A091932EDE50079E8D3 /* DiscountListViewController.m in Sources */,
+				492D1B2419DAAF03006BEB04 /* Card.m in Sources */,
 				49A6FBEA19332D9F00B06E42 /* DiscountTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

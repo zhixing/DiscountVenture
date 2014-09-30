@@ -32,6 +32,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self loadDataFromServer];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,32 +42,66 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Load Data
+
+- (void)loadDataFromServer{
+    self.cards = [[NSMutableArray alloc] init];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Card"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            
+            NSLog(@"Successfully retrieved %d cards.", objects.count);
+            
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object);
+                Card* card = [[Card alloc] initWithCardName:object[@"cardName"]
+                                                              andIconURL:object[@"iconURL"]];
+                [self.cards addObject: card];
+            }
+            
+            [self.tableView reloadData];
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.cards count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
     
-    // Configure the cell...
+    Card* card = [self.cards objectAtIndex:indexPath.row];
+    
+    UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 70, 70)];
+    [cell addSubview:imageView];
+    
+    [imageView setImageWithURL:[NSURL URLWithString:card.iconURL]
+              placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+
+    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(80, 5, 200, 50)];
+    [cell addSubview:label];
+    label.text = card.cardName;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
