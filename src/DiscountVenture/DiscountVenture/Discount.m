@@ -14,15 +14,16 @@
 - (id) initWithIconURL: (NSString*) u
               andTitle: (NSString*) s
         andDescription: (NSString*) d
-        andValidPeriod: (NSString*) v{
+          andValidFrom:(int)vf
+            andValidTo:(int)vt{
     self = [super init];
     if (self) {
         
         self.iconURL = u;
         self.title = s;
-        self.description = d;
-        self.validPeriod = v;
-        
+        self.discountDescription = d;
+        self.validFrom = vf;
+        self.validFrom = vt;
     }
     return self;
 }

@@ -9,6 +9,12 @@
 #import "MenuTableViewController.h"
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 
+#define NEARBY @"Nearby"
+#define CATEGORY @"Category"
+#define MY_FAVOURITES @"My Favourites"
+#define ADVANCED_SEARCH @"Advanced Search"
+#define CARDS @"Cards"
+
 @interface MenuTableViewController (){
     NSArray *iconImages;
     NSArray *titles;
@@ -25,8 +31,8 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    iconImages = [NSArray arrayWithObjects:@"nearby", @"category", @"cards", @"favourites", @"search", @"account", nil];
-    titles = [NSArray arrayWithObjects:@"Nearby", @"Service Category", @"Cards", @"My Favourites", @"Advanced Search", @"Account", nil];
+    iconImages = [NSArray arrayWithObjects:@"nearby", @"category", @"favourites", @"search", @"cards", nil];
+    titles = [NSArray arrayWithObjects:NEARBY, CATEGORY, MY_FAVOURITES, ADVANCED_SEARCH, CARDS, nil];
     
     // Select the first row, because the default vc to load is the major mc.
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
@@ -63,25 +69,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *title = titles[indexPath.row];
     
-    if ([title isEqualToString:@"Nearby"] || [title isEqualToString:@"My Favourites"]){
+    if ([title isEqualToString:NEARBY] || [title isEqualToString:MY_FAVOURITES]){
         
         UINavigationController *vc = (UINavigationController*)[self.storyboard instantiateViewControllerWithIdentifier:@"NaviVCBrforeDiscountVC"];
         [self.slidingViewController setTopViewController:vc];
         [self.slidingViewController resetTopViewAnimated:YES];
         
-    } else if ([title isEqualToString:@"Service Category"]){
+    } else if ([title isEqualToString:CATEGORY]){
         
         
         
-    } else if ([title isEqualToString:@"Cards"]){
+    } else if ([title isEqualToString:ADVANCED_SEARCH]){
         
         
         
-    } else if ([title isEqualToString:@"Advanced Search"]){
-        
-        
-        
-    } else if ([title isEqualToString:@"Account"]){
+    } else if ([title isEqualToString:CARDS]){
         
         
         

@@ -30,7 +30,7 @@
     
     self.titleLabel.text = self.discount.title;
     self.descriptionsLabel.text = self.discount.description;
-    self.validPeriodLabel.text = self.discount.validPeriod;
+    self.validPeriodLabel.text = [NSString stringWithFormat:@"%d" ,self.discount.validTo];
     
     UIImage* image = [UIImage imageNamed:self.discount.iconURL];
     self.iconImageView.image = image;

@@ -23,6 +23,19 @@
 		4946F0A8192B50E300F955C2 /* DiscountVentureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946F0A7192B50E300F955C2 /* DiscountVentureTests.m */; };
 		49A6FBEA19332D9F00B06E42 /* DiscountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FBE919332D9F00B06E42 /* DiscountTableViewCell.m */; };
 		49A6FBED1933325A00B06E42 /* Discount.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FBEC1933325A00B06E42 /* Discount.m */; };
+		49E2B20E19D88EBE000224A6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B20B19D88EBE000224A6 /* Bolts.framework */; };
+		49E2B20F19D88EBE000224A6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B20C19D88EBE000224A6 /* Parse.framework */; };
+		49E2B21219D88EE2000224A6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B21119D88EE2000224A6 /* AudioToolbox.framework */; };
+		49E2B21419D88EEB000224A6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B21319D88EEB000224A6 /* CFNetwork.framework */; };
+		49E2B21619D88EF9000224A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B21519D88EF9000224A6 /* CoreLocation.framework */; };
+		49E2B21819D88F03000224A6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B21719D88F03000224A6 /* libz.dylib */; };
+		49E2B21A19D88F0D000224A6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B21919D88F0D000224A6 /* MobileCoreServices.framework */; };
+		49E2B21C19D88F15000224A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B21B19D88F15000224A6 /* QuartzCore.framework */; };
+		49E2B21E19D88F1C000224A6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B21D19D88F1C000224A6 /* Security.framework */; };
+		49E2B22219D88F2A000224A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B22119D88F2A000224A6 /* SystemConfiguration.framework */; };
+		49E2B22419D89282000224A6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B22319D89282000224A6 /* StoreKit.framework */; };
+		49E2B22619D899D3000224A6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B22519D899D3000224A6 /* Accounts.framework */; };
+		49E2B22819D89A35000224A6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E2B22719D89A35000224A6 /* Social.framework */; };
 		49E73A011932ED800079E8D3 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E73A001932ED800079E8D3 /* MenuTableViewController.m */; };
 		49E73A091932EDE50079E8D3 /* DiscountListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E73A081932EDE50079E8D3 /* DiscountListViewController.m */; };
 		49E73A0C1932EE110079E8D3 /* CardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E73A0B1932EE110079E8D3 /* CardTableViewController.m */; };
@@ -66,6 +79,19 @@
 		49A6FBE919332D9F00B06E42 /* DiscountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscountTableViewCell.m; sourceTree = "<group>"; };
 		49A6FBEB1933325A00B06E42 /* Discount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Discount.h; sourceTree = "<group>"; };
 		49A6FBEC1933325A00B06E42 /* Discount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Discount.m; sourceTree = "<group>"; };
+		49E2B20B19D88EBE000224A6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		49E2B20C19D88EBE000224A6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		49E2B21119D88EE2000224A6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		49E2B21319D88EEB000224A6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		49E2B21519D88EF9000224A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		49E2B21719D88F03000224A6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		49E2B21919D88F0D000224A6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		49E2B21B19D88F15000224A6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		49E2B21D19D88F1C000224A6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		49E2B22119D88F2A000224A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		49E2B22319D89282000224A6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		49E2B22519D899D3000224A6 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		49E2B22719D89A35000224A6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		49E739FF1932ED800079E8D3 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		49E73A001932ED800079E8D3 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		49E73A071932EDE50079E8D3 /* DiscountListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscountListViewController.h; sourceTree = "<group>"; };
@@ -86,9 +112,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E2B22819D89A35000224A6 /* Social.framework in Frameworks */,
+				49E2B22619D899D3000224A6 /* Accounts.framework in Frameworks */,
+				49E2B22419D89282000224A6 /* StoreKit.framework in Frameworks */,
+				49E2B22219D88F2A000224A6 /* SystemConfiguration.framework in Frameworks */,
+				49E2B21E19D88F1C000224A6 /* Security.framework in Frameworks */,
+				49E2B21C19D88F15000224A6 /* QuartzCore.framework in Frameworks */,
+				49E2B21A19D88F0D000224A6 /* MobileCoreServices.framework in Frameworks */,
+				49E2B21819D88F03000224A6 /* libz.dylib in Frameworks */,
+				49E2B21619D88EF9000224A6 /* CoreLocation.framework in Frameworks */,
+				49E2B21419D88EEB000224A6 /* CFNetwork.framework in Frameworks */,
+				49E2B21219D88EE2000224A6 /* AudioToolbox.framework in Frameworks */,
+				49E2B20E19D88EBE000224A6 /* Bolts.framework in Frameworks */,
 				4946F07C192B50E300F955C2 /* CoreGraphics.framework in Frameworks */,
 				4946F07E192B50E300F955C2 /* UIKit.framework in Frameworks */,
 				4946F07A192B50E300F955C2 /* Foundation.framework in Frameworks */,
+				49E2B20F19D88EBE000224A6 /* Parse.framework in Frameworks */,
 				E62798F257B241E28F23788C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +168,17 @@
 		4946F078192B50E300F955C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49E2B22719D89A35000224A6 /* Social.framework */,
+				49E2B22519D899D3000224A6 /* Accounts.framework */,
+				49E2B22319D89282000224A6 /* StoreKit.framework */,
+				49E2B22119D88F2A000224A6 /* SystemConfiguration.framework */,
+				49E2B21D19D88F1C000224A6 /* Security.framework */,
+				49E2B21B19D88F15000224A6 /* QuartzCore.framework */,
+				49E2B21919D88F0D000224A6 /* MobileCoreServices.framework */,
+				49E2B21719D88F03000224A6 /* libz.dylib */,
+				49E2B21519D88EF9000224A6 /* CoreLocation.framework */,
+				49E2B21319D88EEB000224A6 /* CFNetwork.framework */,
+				49E2B21119D88EE2000224A6 /* AudioToolbox.framework */,
 				4946F079192B50E300F955C2 /* Foundation.framework */,
 				4946F07B192B50E300F955C2 /* CoreGraphics.framework */,
 				4946F07D192B50E300F955C2 /* UIKit.framework */,
@@ -141,6 +191,7 @@
 		4946F07F192B50E300F955C2 /* DiscountVenture */ = {
 			isa = PBXGroup;
 			children = (
+				49E2B20A19D88EA5000224A6 /* Misc */,
 				49E73A061932EDAB0079E8D3 /* Models */,
 				49E73A051932EDA30079E8D3 /* Views */,
 				49E73A031932ED8E0079E8D3 /* ViewControllers */,
@@ -181,6 +232,15 @@
 				4946F0A4192B50E300F955C2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49E2B20A19D88EA5000224A6 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				49E2B20B19D88EBE000224A6 /* Bolts.framework */,
+				49E2B20C19D88EBE000224A6 /* Parse.framework */,
+			);
+			name = Misc;
 			sourceTree = "<group>";
 		};
 		49E73A031932ED8E0079E8D3 /* ViewControllers */ = {
@@ -269,6 +329,14 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = DiscountVenture;
 				TargetAttributes = {
+					4946F075192B50E300F955C2 = {
+						DevelopmentTeam = 6TJJ53K256;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
 					4946F099192B50E300F955C2 = {
 						TestTargetID = 4946F075192B50E300F955C2;
 					};
@@ -498,6 +566,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DiscountVenture",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiscountVenture/DiscountVenture-Prefix.pch";
 				INFOPLIST_FILE = "DiscountVenture/DiscountVenture-Info.plist";
@@ -512,6 +584,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DiscountVenture",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiscountVenture/DiscountVenture-Prefix.pch";
 				INFOPLIST_FILE = "DiscountVenture/DiscountVenture-Info.plist";

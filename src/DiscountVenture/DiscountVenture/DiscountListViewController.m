@@ -27,18 +27,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
     Discount* d1 = [[Discount alloc] initWithIconURL:@"cocacola"
                                             andTitle:@"Coca Cola"
                                       andDescription:@"With every purchase of $100, $15 is refunded"
-                                      andValidPeriod:@"Valid till May 29"];
+                                        andValidFrom:20140412
+                                          andValidTo:20140412];
     Discount* d2 = [[Discount alloc] initWithIconURL:@"ikea"
                                             andTitle:@"Ikea Family Care"
                                       andDescription:@"Enjoy 10% discount at our new retail store at Vivo City"
-                                      andValidPeriod:@"Valid till June 9"];
+                                        andValidFrom:20140412
+                                          andValidTo:20140412];
     Discount* d3 = [[Discount alloc] initWithIconURL:@"sumsung"
                                             andTitle:@"Sumsung"
                                       andDescription:@"All items sell at 15% discount"
-                                      andValidPeriod:@"Valid till December 2"];
+                                        andValidFrom:20140412
+                                          andValidTo:20140412];
     
     self.discounts = [NSArray arrayWithObjects:d1, d2, d3, nil];
     
@@ -68,7 +73,7 @@
     
     cell.titleLabel.text = discount.title;
     cell.descriptionsLabel.text = discount.description;
-    cell.validPeriodLabel.text = discount.validPeriod;
+    cell.validPeriodLabel.text = @"ffff";
     
     UIImage* image = [UIImage imageNamed:discount.iconURL];
     cell.iconImageView.image = image;

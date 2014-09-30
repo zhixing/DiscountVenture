@@ -11,6 +11,7 @@
 #import "Discount.h"
 #import "DiscountTableViewCell.h"
 #import "DiscountDetailViewController.h"
+#import <Parse/Parse.h>
 
 enum discountListType{
     TYPE_DEFAULT,

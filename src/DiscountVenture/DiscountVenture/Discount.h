@@ -13,13 +13,16 @@
 @property (strong, nonatomic) NSString* iconURL;
 @property (strong, nonatomic) NSString* title;
 
-@property (strong, nonatomic) NSString* description;
+@property (strong, nonatomic) NSString* discountDescription;
 
-@property (strong, nonatomic) NSString* validPeriod;
+// Format: "yyyymmdd"
+@property (nonatomic) int validFrom;
+@property (nonatomic) int validTo;
 
 - (id) initWithIconURL: (NSString*) u
               andTitle: (NSString*) s
         andDescription: (NSString*) d
-        andValidPeriod: (NSString*) v;
+        andValidFrom: (int) vf
+            andValidTo: (int) vt;
 
 @end
